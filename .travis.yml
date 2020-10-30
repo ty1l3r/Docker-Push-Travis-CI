@@ -1,0 +1,16 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t tyl13r/node2 .
+  - docker images tyl13r/nodes2
+
+before_deploy:
+  - docker login -u="$USERNAME_DOCKER" -p="$PASSWORD_DOCKER"
+
+deploy:
+  provider: script
+  script: docker push USERNAME_DOCKER/DockerTravisCi
+  on:
+    branch: main

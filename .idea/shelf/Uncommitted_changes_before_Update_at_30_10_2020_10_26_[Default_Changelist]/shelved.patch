@@ -1,0 +1,88 @@
+Index: .travis.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>sudo: required\nservices:\n  - docker\n\nscript:\n  - docker build -t tyl13r/node2 .\n  - docker images tyl13r/nodes2\n\nbefore_deploy:\n  - docker login -u USERNAME_DOCKER -p PASSWORD_DOCKER\n\ndeploy:\n  provider: script\n  script: docker push tyl13r/DockerTravisCi\n  on:\n    branch: main\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .travis.yml	(revision 66d8734b942e1ddb0f540e0520274520bb7a1afe)
++++ .travis.yml	(date 1604049977044)
+@@ -7,7 +7,7 @@
+   - docker images tyl13r/nodes2
+ 
+ before_deploy:
+-  - docker login -u USERNAME_DOCKER -p PASSWORD_DOCKER
++  - docker login -u "USERNAME_DOCKER" -p "PASSWORD_DOCKER"
+ 
+ deploy:
+   provider: script
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand />\n    <select>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </select>\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"2e08a961-441f-44e7-b223-e7512d89bf52\" name=\"Default Changelist\" comment=\"Docker-Ci-Travis push on DockerHub II\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.travis.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.travis.yml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\">\n    <execution />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n    <option name=\"RESET_MODE\" value=\"HARD\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1jTGnN1WfBXjD9Ihwq2QD8SjIMk\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/node\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"2e08a961-441f-44e7-b223-e7512d89bf52\" name=\"Default Changelist\" comment=\"\" />\n      <created>1603820833956</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1603820833956</updated>\n      <workItem from=\"1603820834990\" duration=\"881000\" />\n      <workItem from=\"1603824866570\" duration=\"100000\" />\n      <workItem from=\"1603824967695\" duration=\"1635000\" />\n      <workItem from=\"1603892868898\" duration=\"1445000\" />\n      <workItem from=\"1603894858074\" duration=\"19000\" />\n      <workItem from=\"1603894901729\" duration=\"165000\" />\n      <workItem from=\"1603895084348\" duration=\"973000\" />\n      <workItem from=\"1603923429717\" duration=\"1336000\" />\n      <workItem from=\"1603966052981\" duration=\"2113000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Docker-Ci-Travis push on DockerHub\">\n      <created>1603894107166</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1603894107166</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Docker-Ci-Travis push on DockerHub\">\n      <created>1603925590152</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1603925590152</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Docker-Ci-Travis push on DockerHub II\">\n      <created>1603966432109</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1603966432109</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"4\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Docker-Ci-Travis push on DockerHub\" />\n    <MESSAGE value=\"Docker-Ci-Travis push on DockerHub II\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Docker-Ci-Travis push on DockerHub II\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"3364\" y=\"308\" key=\"MergeDialog\" timestamp=\"1603894180290\">\n      <screen x=\"1680\" y=\"23\" width=\"3440\" height=\"1417\" />\n    </state>\n    <state x=\"3364\" y=\"308\" key=\"MergeDialog/0.23.1680.963/1680.23.3440.1417/5120.23.1920.1057@1680.23.3440.1417\" timestamp=\"1603894180290\" />\n    <state x=\"3676\" y=\"472\" key=\"MultipleFileMergeDialog\" timestamp=\"1603894180334\">\n      <screen x=\"1680\" y=\"23\" width=\"3440\" height=\"1417\" />\n    </state>\n    <state x=\"3676\" y=\"472\" key=\"MultipleFileMergeDialog/0.23.1680.963/1680.23.3440.1417/5120.23.1920.1057@1680.23.3440.1417\" timestamp=\"1603894180334\" />\n    <state x=\"3636\" y=\"412\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1603966433925\">\n      <screen x=\"1680\" y=\"23\" width=\"3440\" height=\"1353\" />\n    </state>\n    <state x=\"3636\" y=\"412\" key=\"Vcs.Push.Dialog.v2/0.23.1680.1027/1680.23.3440.1353/5120.23.1920.1057@1680.23.3440.1353\" timestamp=\"1603966433925\" />\n    <state x=\"3636\" y=\"430\" key=\"Vcs.Push.Dialog.v2/0.23.1680.963/1680.23.3440.1417/5120.23.1920.1057@1680.23.3440.1417\" timestamp=\"1603894109325\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 66d8734b942e1ddb0f540e0520274520bb7a1afe)
++++ .idea/workspace.xml	(date 1604004673617)
+@@ -10,9 +10,8 @@
+     </select>
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="2e08a961-441f-44e7-b223-e7512d89bf52" name="Default Changelist" comment="Docker-Ci-Travis push on DockerHub II">
++    <list default="true" id="2e08a961-441f-44e7-b223-e7512d89bf52" name="Default Changelist" comment="Docker-Ci-Travis push on DockerHub III">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -60,7 +59,7 @@
+       <workItem from="1603894901729" duration="165000" />
+       <workItem from="1603895084348" duration="973000" />
+       <workItem from="1603923429717" duration="1336000" />
+-      <workItem from="1603966052981" duration="2113000" />
++      <workItem from="1603966052981" duration="2784000" />
+     </task>
+     <task id="LOCAL-00001" summary="Docker-Ci-Travis push on DockerHub">
+       <created>1603894107166</created>
+@@ -83,7 +82,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1603966432109</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="Docker-Ci-Travis push on DockerHub III">
++      <created>1604003229199</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1604003229199</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -104,7 +110,8 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Docker-Ci-Travis push on DockerHub" />
+     <MESSAGE value="Docker-Ci-Travis push on DockerHub II" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Docker-Ci-Travis push on DockerHub II" />
++    <MESSAGE value="Docker-Ci-Travis push on DockerHub III" />
++    <option name="LAST_COMMIT_MESSAGE" value="Docker-Ci-Travis push on DockerHub III" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="3364" y="308" key="MergeDialog" timestamp="1603894180290">
+@@ -115,10 +122,11 @@
+       <screen x="1680" y="23" width="3440" height="1417" />
+     </state>
+     <state x="3676" y="472" key="MultipleFileMergeDialog/0.23.1680.963/1680.23.3440.1417/5120.23.1920.1057@1680.23.3440.1417" timestamp="1603894180334" />
+-    <state x="3636" y="412" key="Vcs.Push.Dialog.v2" timestamp="1603966433925">
+-      <screen x="1680" y="23" width="3440" height="1353" />
++    <state x="618" y="256" key="Vcs.Push.Dialog.v2" timestamp="1604003259461">
++      <screen x="0" y="23" width="1680" height="963" />
+     </state>
+     <state x="3636" y="412" key="Vcs.Push.Dialog.v2/0.23.1680.1027/1680.23.3440.1353/5120.23.1920.1057@1680.23.3440.1353" timestamp="1603966433925" />
++    <state x="618" y="256" key="Vcs.Push.Dialog.v2/0.23.1680.963/1680.23.3440.1417/5120.23.1920.1057@0.23.1680.963" timestamp="1604003259461" />
+     <state x="3636" y="430" key="Vcs.Push.Dialog.v2/0.23.1680.963/1680.23.3440.1417/5120.23.1920.1057@1680.23.3440.1417" timestamp="1603894109325" />
+   </component>
+ </project>
+\ No newline at end of file
