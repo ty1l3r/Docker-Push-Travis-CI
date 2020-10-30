@@ -25,10 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e08a961-441f-44e7-b223-e7512d89bf52" name="Default Changelist" comment="Docker-Ci-Travis push on DockerHub III">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="2e08a961-441f-44e7-b223-e7512d89bf52" name="Default Changelist" comment="Docker-Ci-Travis push on DockerHub add &quot;NPM UPDATE&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604003229199</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Docker-Ci-Travis push on DockerHub (git stash ?)">
+      <created>1604057357160</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604057357160</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Docker-Ci-Travis push on DockerHub add &quot;NPM UPDATE&quot;">
+      <created>1604057458152</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604057458152</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +150,9 @@
     <MESSAGE value="Docker-Ci-Travis push on DockerHub" />
     <MESSAGE value="Docker-Ci-Travis push on DockerHub II" />
     <MESSAGE value="Docker-Ci-Travis push on DockerHub III" />
-    <option name="LAST_COMMIT_MESSAGE" value="Docker-Ci-Travis push on DockerHub III" />
+    <MESSAGE value="Docker-Ci-Travis push on DockerHub (git stash ?)" />
+    <MESSAGE value="Docker-Ci-Travis push on DockerHub add &quot;NPM UPDATE&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker-Ci-Travis push on DockerHub add &quot;NPM UPDATE&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="3364" y="308" key="MergeDialog" timestamp="1603894180290">
@@ -150,12 +163,12 @@
       <screen x="1680" y="23" width="3440" height="1417" />
     </state>
     <state x="3676" y="472" key="MultipleFileMergeDialog/0.23.1680.963/1680.23.3440.1417/5120.23.1920.1057@1680.23.3440.1417" timestamp="1603894180334" />
-    <state x="618" y="256" key="Vcs.Push.Dialog.v2" timestamp="1604050045480">
-      <screen x="0" y="23" width="1680" height="963" />
+    <state x="3636" y="430" key="Vcs.Push.Dialog.v2" timestamp="1604057460552">
+      <screen x="1680" y="23" width="3440" height="1417" />
     </state>
     <state x="3636" y="412" key="Vcs.Push.Dialog.v2/0.23.1680.1027/1680.23.3440.1353/5120.23.1920.1057@1680.23.3440.1353" timestamp="1603966433925" />
     <state x="618" y="256" key="Vcs.Push.Dialog.v2/0.23.1680.963/1680.23.3440.1417/5120.23.1920.1057@0.23.1680.963" timestamp="1604050045480" />
-    <state x="3636" y="430" key="Vcs.Push.Dialog.v2/0.23.1680.963/1680.23.3440.1417/5120.23.1920.1057@1680.23.3440.1417" timestamp="1603894109325" />
+    <state x="3636" y="430" key="Vcs.Push.Dialog.v2/0.23.1680.963/1680.23.3440.1417/5120.23.1920.1057@1680.23.3440.1417" timestamp="1604057460552" />
     <state x="554" y="245" key="VcsDiffUtil.ChangesDialog" timestamp="1604050031785">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
