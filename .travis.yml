@@ -3,8 +3,8 @@ services:
   - docker
 
 script:
-  - docker build -t tyl13r/node .
-  - docker images tyl13r/node
+  - docker build -t tyl13r/docker-travis-ci .
+  - docker images tyl13r/docker-travis-ci
 
 before_deploy:
   - docker login -u tyl13r -p="$PASSWORD_DOCKER"
