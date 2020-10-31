@@ -3,8 +3,8 @@ services:
   - docker
 
 script:
-  - docker build -t tyl13r/nodeSimple .
-  - docker images tyl13r/nodesSimple
+  - docker build -t tyl13r/node .
+  - docker images tyl13r/node
 
 before_deploy:
   - docker login -u tyl13r -p="$PASSWORD_DOCKER"
