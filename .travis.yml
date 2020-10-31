@@ -12,6 +12,6 @@ before_deploy:
 deploy:
   skip_cleanup: true
   provider: script
-  script: docker push tyl13r/DockerTravisCi
+  script: docker push tyl13r/docker-travis-ci
   on:
     branch: main
