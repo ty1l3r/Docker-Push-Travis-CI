@@ -3,11 +3,11 @@ services:
   - docker
 
 script:
-  - docker build -t tyl13r/node2 .
-  - docker images tyl13r/nodes2
+  - docker build -t tyl13r/nodeSimple .
+  - docker images tyl13r/nodesSimple
 
 before_deploy:
-  - docker login -u="$USERNAME_DOCKER" -p="$PASSWORD_DOCKER"
+  - docker login -u tyl13r -p="$PASSWORD_DOCKER"
 
 deploy:
   skip_cleanup: true
